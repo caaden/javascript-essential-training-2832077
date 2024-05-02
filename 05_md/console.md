@@ -21,3 +21,13 @@ document.querySelector(".new_backpack_color").classList.replace("new_backpack_co
 document.querySelector('img').getAttribute('src')
 document.querySelector('img').setAttribute('junk','this-junk-att')
 document.querySelector('img').removeAttribute('junk')
+
+## Appending elements to the document
+const main = document.querySelector(".maincontent");
+
+// Create new element, but don't use it yet
+const newArticle = document.createElement("article");
+newArticle.classList.add("backpack");
+newArticle.setAttribute("id", "everyday");
+newArticle.innerHTML = content;
+main.append(newArticle);
